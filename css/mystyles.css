@@ -1,5 +1,5 @@
 /* general styles */
-html, body {
+html, body, header {
   height: 100%;
   width: 100%;
 }
@@ -15,37 +15,27 @@ html, body {
 	transform: translate(-50%, -50%);
 	font-family: orbitron;
 }
-/*
-.text-vcenter {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  height: auto;
-  margin: 0 auto;
-}
 
-.text-vcenter h1 {
-  font-size: 4.5em;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
+div#bg-cover-rotator {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
 }
-*/
 
 /* Bootstrap One-Page */ 
-.cover {
-  background-image: url(../img/carousel/aplchi5.png);
+#cover-1 {
+  /* background-image: url(../img/carousel/aplchi5.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  display: table;
+
   height: 100%;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;	*/
 }
 
 .greek-letters {
