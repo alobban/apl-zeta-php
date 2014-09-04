@@ -1,0 +1,95 @@
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* vertical-centered text */
+.intro-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-family: orbitron;
+}
+/*
+.text-vcenter {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  margin: 0 auto;
+}
+
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+/* Bootstrap One-Page */ 
+.cover {
+  background-image: url(../img/carousel/aplchi5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.greek-letters {
+	opacity: .2;
+	color: #ffeb0f;
+	font-size: 14em;
+}
+
+.greek-name {
+	opacity: .5;
+	color: white;
+	font-size: 4em;
+}
+
+.statement {
+	display: block;
+	background-color: #5c5c5c;
+	border-radius: 8px;
+	opacity: .9;
+	font-weight: 400;
+	color: #f5f5f5;
+}
+
+.filler {
+	clear: both;
+	display: block;
+	padding-top: 50px;
+	position: relative;
+}
+
+.text-center {
+	text-align: center;
+	
+}
+
+#history {
+  background: url(../img/aplchi.png) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
