@@ -2,6 +2,16 @@
  * @author Andrew
  */
 
+function switchImg() {
+    $("#bg-cover-rotator.cover").each(function(index) {
+    	console.log(index);
+        $(this).hide();
+        $(this).delay(10000 * index).fadeIn(10000).fadeOut(10000);
+    });
+}
+
+
+
 // var bkgdImage = document.getElementById("cover");
 // console.log(bkgdImage);
 
@@ -39,8 +49,9 @@ window.onload = function() {
 			bkgdChildren[cnt].style.webkitBackgroundSize = "cover";
 			
 			// switch the other background off
-			bkgdChildren[(cnt+1)%count].style.display = "none";
-			bkgdChildren[cnt].style.display = "block";
+			switchImg();
+			// bkgdChildren[(cnt+1)%count].style.display = "none";
+			// bkgdChildren[cnt].style.display = "block";
 		} else {
 			bkgdChildren[cnt].style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center fixed";
 			bkgdChildren[cnt].style.position = "relative";
@@ -50,8 +61,12 @@ window.onload = function() {
 			bkgdChildren[cnt].style.webkitBackgroundSize = "cover";
 			
 			// switch the other background off
-			bkgdChildren[(cnt+1)%count].style.display = "none";
-			bkgdChildren[cnt].style.display = "block";
+			switchImg();
+			// bkgdChildren[(cnt+1)%count].style.display = "none";
+			// bkgdChildren[cnt].style.display = "block";
 		}
+		console.log("displaying image" + imageArray[imageIndex]);
 	} 
 };
+
+

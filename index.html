@@ -16,7 +16,7 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-		<link href='http://fonts.googleapis.com/css?family=Calligraffitti|Orbitron|Lobster+Two' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Orbitron' rel='stylesheet' type='text/css'>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -28,25 +28,23 @@
 	<body>
 		<header>
 			<div id="bg-cover-rotator">
-				<div id="cover-1" class="cover" style="background: url(./img/carousel/aplchi1.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
-				<div id="cover-1" class="cover" style="display:none; background: url(./img/carousel/aplchi5.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
+				<div id="cover-1" class="cover" style="background: url(./img/jaguar.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
+				<div id="cover-2" class="cover" style="display:none; background: url(./img/carousel/aplchi2.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
 				
 			</div>
-			<!--	Bootstrap One-Page CSS Template	--> 
-			<div class="intro-content">
-				<!-- <img src="img/apl_zeta2.png" class="img-responsive img-centered"/> -->
-					
 			<!--	first section - Home	-->
-			<div id="home" class="home">
-				<div class="text-vcenter">
-					<h1 class="greek-letters">ΑΨΛ</h1>
-					<h2 class="greek-name">ZETA Chapter</h2>
-					<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
-					<a href="#about" class="btn btn-default btn-lg">About us</a>
+			<div>
+				<div id="home" class="intro-content home">
+					<div class="text-vcenter">
+						<h1 class="greek-letters">Alpha Psi Lambda</h1>
+						<h2 class="greek-name">Zeta Chapter<br /><small class="sub">University of Illinois Chicago</small></h2>
+						<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
+						<a href="#about" id="continue" class="btn btn-default btn-lg">&gt;</a>
+					</div>
 				</div>
 			</div>
 			<!--	/first section		-->
-			</div>
+			
 		</header>
 			
 			<!-- navigation panel -->
@@ -59,15 +57,34 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#cover">ΑΨΛ - ZETA</a>
+						<a class="navbar-brand cust-font" href="#cover">ΑΨΛ - ZETA</a>
 					</div>
 					
 					<div class="collapse navbar-collapse" id="navbar-collapse-main">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#cover">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#history">History</a></li>
-							<li><a href="#events">Events &amp; Recruitment</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+									About Us <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">History</a></li>
+									<li><a href="#">Community Service</a></li>
+									<li><a href="http://www.alphapsilambda.net/" target="_blank">Nationals</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Members <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">E-Board</a></li>
+									<li><a href="#">Recent Lines</a></li>
+									<li><a href="#">Past Lines</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Recruitment</a></li>
 						</ul>
 					</div>
 				</div>
@@ -90,8 +107,9 @@
 					</div>
 					<div class="col-xs-12 col-md-8">
 						<div class="thumbnail">
-							<p>Alpha Psi Lambda is the nation's First and Largest Co-ed Latino oriented Social Greek Fraternity. We are family-based organization that breaks through sterotypical boundaries and eases its way into a plethora of cultures.
-We are a unique Greek Fraternity where only the Noblest Brothers and Sisters come together to form the great family that Alpha Psi Lambda represents.</p>
+							<p class="write">Alpha Psi Lambda is the nation's First and Largest Co-ed Latino oriented Social Greek Fraternity. We are family-based organization that breaks through sterotypical boundaries and eases its way into a plethora of cultures.
+								We are a unique Greek Fraternity where only the Noblest Brothers and Sisters come together to form the great family that Alpha Psi Lambda represents.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -100,8 +118,32 @@ We are a unique Greek Fraternity where only the Noblest Brothers and Sisters com
 			
 			<!--	third section		-->
 			<section id="history" class="cover">
-				<div>
-					
+				<div id="comm" class="col-md-6 col-xs-12">
+					<div class="transbox caption">
+						<h1>Community Service</h1>
+						<div id="services" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<img class="img-responsive" title="Luis" src="./img/community/aplzeta_comm1.png" />
+								</div>
+								<div class="item">
+									<img class="img-responsive" title="Luisa" src="./img/community/aplzeta_comm2.png" />
+								</div>
+								<div class="item">
+									<img class="img-responsive" title="Manny" src="./img/community/aplzeta_comm3.png" />
+								</div>
+								<div class="item">
+									<img class="img-responsive" title="Student holding a pi&ntilde;ata made by members of Alpha Psi Lambda" src="./img/community/aplzeta_comm4.png" />
+								</div>
+							</div>
+						</div>
+						<p class="write">D&iacute;a Del Ni&ntilde;o Fair</p>
+					</div>
+				</div>
+				<div id="comm" class="col-md-6 col-xs-12">
+					<div class="transbox">
+						<p class="write"></p>
+					</div>
 				</div>
 			</section>
 			<!--	/third section		-->
@@ -109,8 +151,8 @@ We are a unique Greek Fraternity where only the Noblest Brothers and Sisters com
 			<!--	footer section		-->
 			<footer>
 				<div class="panel-footer">
-					<p>
-						&copy; Copyright  by Andrew
+					<p style="font-family: orbitron; float: right;">
+						&copy; Copyright by &Alpha;&Psi;&Lambda;&#39;s <a href="http://www.linkedin.com/pub/andrew-lobban/39/94b/8aa/">Andrew Lobban</a>
 					</p>
 				</div>
 			</footer>
