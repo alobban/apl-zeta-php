@@ -57,11 +57,8 @@ div#bg-cover-rotator {
 	font-size: 1.9em;
 }
 
-.filler {
-	clear: both;
-	display: block;
-	padding-top: 50px;
-	position: relative;
+#filler {
+	margin: 30px 0;
 }
 
 .text-center {
@@ -72,7 +69,7 @@ div#bg-cover-rotator {
 	font-family: orbitron;
 }
 
-#history {
+#infoSection {
   background: url(../img/jaguar.png) no-repeat center center fixed;
   display: table;
   height: 100%;
@@ -99,7 +96,8 @@ div#bg-cover-rotator {
 
 .write {
 	font-family: lora;
-	font-size: 1.2em;
+	font-size: 1em;
+	text-align: left;
 }
 
 div.transbox {
@@ -115,15 +113,35 @@ div.transbox {
 
 div.transbox p {
     margin: 30px 40px;
-    font-weight: bold;
+    font-weight: 400;
     color: #000000;
 }
 
 /* Styling images */
+div #fixed-images {
+	margin: auto;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
 img {
 	margin: auto;
 	width: 60%;
 	height: 50%;
 	border-radius: 10px;
-	overflow: hidden;
+}
+
+/* Custome styling for Panel Headings */
+.panel-primary .panel-heading {
+	background-color: #602F8D;
+	border-color: #ffeb0f;
+}
+
+.panel-primary .panel-footer {
+	border-color: #ffeb0f;
+}
+
+.panel {
+	border-color: #ffeb0f;
 }
