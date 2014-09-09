@@ -193,7 +193,7 @@
 			<!--	footer section		-->
 			<footer>
 				<div class="panel-footer">
-					<p style="font-family: orbitron; float: right;">
+					<p class="cust-font" style="float: right;">
 						&copy; Copyright by &Alpha;&Psi;&Lambda;&#39;s <a href="http://www.linkedin.com/pub/andrew-lobban/39/94b/8aa/">Andrew Lobban</a>
 					</p>
 				</div>
