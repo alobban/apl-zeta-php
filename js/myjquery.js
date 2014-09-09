@@ -30,7 +30,7 @@ window.onload = function() {
 	var cnt = 0, count = bkgdChildren.length;
 	console.log(cnt + " " + count);
 	
-	var input = "../apl-zeta/img/carousel/";
+	var input = "./img/carousel/";
 	var imageArray = ["aplchi1.png","aplchi2.png","aplchi3.png","aplchi4.png","aplchi5.png"];
 	var imageIndex = 0;
 	
