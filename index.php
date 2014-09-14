@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>index</title>
+		<title>APL-Zeta Chapter</title>
 		<meta name="description" content="">
 		<meta name="author" content="Andrew">
 
@@ -17,29 +17,33 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Orbitron' rel='stylesheet' type='text/css'>
-		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/mystyles.css" />
 	</head>
 
 	<body>
 		<header>
 			<div id="bg-cover-rotator">
-				<div id="cover-1" class="cover" style="background: url(./img/jaguar.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
-				<div id="cover-2" class="cover" style="display:none; background: url(./img/carousel/aplchi2.png) no-repeat center center fixed; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover;"></div>
+				<div id="cover-1" class="cover" style="background: url(./img/jaguar.png) no-repeat center center scroll; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;"></div>
+				<div id="cover-2" class="cover" style="display:none; background: url(./img/carousel/aplchi2.png) no-repeat center center scroll; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;"></div>
 				
 			</div>
 			<!--	first section - Home	-->
 			<div>
 				<div id="home" class="intro-content home">
 					<div class="text-vcenter">
+						<img src="./img/intro2.png" class="img-responsive" />
+						<img src="./img/quote.png" class="img-responsive" />
+			<!--
 						<h1 class="greek-letters">Alpha Psi Lambda</h1>
 						<h2 class="greek-name">Zeta Chapter<br /><small class="sub">University of Illinois Chicago</small></h2>
 						<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
-						<a href="#about" id="continue" class="btn btn-default btn-lg">&gt;</a>
+			-->
+						<a id="continue" class="btn" href="#about">
+							<i class="fa fa-angle-down fa-fw"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -201,6 +205,12 @@
 			<!-- Latest compiled and minified JavaScript -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+			<script src="js/jquery.fittext.js"></script>
 			<script src="js/myjquery.js"></script>
+			<script>
+				$("#home h1").fitText( { minFontSize: '16px', maxFontSize: '24px' } );
+				$("#home h2").fitText( { minFontSize: '12px', maxFontSize: '18px' } );
+				$("#home h3").fitText( { minFontSize: '8px', maxFontSize: '14px' } );
+			</script>
 	</body>
 </html>
