@@ -107,7 +107,7 @@
 							<div class="row">
 								<div class="col-xs-12 col-md-4">
 									<div class="thumbnail">
-										<img src="img/crest.png" />
+										<img class="img-responsive" src="img/crest.png" />
 										<div class="caption">
 											<h3>Alpha Psi Lambda Crest</h3>
 										</div>
