@@ -30,7 +30,7 @@ window.onload = function() {
 	var cnt = 0, count = bkgdChildren.length;
 	console.log(cnt + " " + count);
 	
-	var input = "./img/carousel/";
+	var input = "../apl-zeta/img/carousel/";
 	var imageArray = ["aplchi1.png","aplchi2.png","aplchi3.png","aplchi4.png","aplchi5.png"];
 	var imageIndex = 0;
 	
@@ -41,11 +41,13 @@ window.onload = function() {
 		imageIndex = (imageIndex + 1) % imageArray.length;
 		console.log(cnt);
 		if (cnt === 0) {
-			bkgdChildren[cnt].style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center fixed";
+			bkgdChildren[cnt].style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center scroll";
 			bkgdChildren[cnt].style.position = "relative";
 			bkgdChildren[cnt].style.height = "100%";
 			bkgdChildren[cnt].style.width = "100%";
 			bkgdChildren[cnt].style.backgroundSize = "cover";
+			bkgdChildren[cnt].style.mozBackgroundSize = "cover";
+			bkgdChildren[cnt].style.oBackgroundSize = "cover";
 			bkgdChildren[cnt].style.webkitBackgroundSize = "cover";
 			
 			// switch the other background off
@@ -53,11 +55,13 @@ window.onload = function() {
 			bkgdChildren[(cnt+1)%count].style.display = "none";
 			bkgdChildren[cnt].style.display = "block";
 		} else {
-			bkgdChildren[cnt].style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center fixed";
+			bkgdChildren[cnt].style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center scroll";
 			bkgdChildren[cnt].style.position = "relative";
 			bkgdChildren[cnt].style.height = "100%";
 			bkgdChildren[cnt].style.width = "100%";
 			bkgdChildren[cnt].style.backgroundSize = "cover";
+			bkgdChildren[cnt].style.mozBackgroundSize = "cover";
+			bkgdChildren[cnt].style.oBackgroundSize = "cover";
 			bkgdChildren[cnt].style.webkitBackgroundSize = "cover";
 			
 			// switch the other background off
