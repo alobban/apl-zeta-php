@@ -26,7 +26,7 @@
 	<body>
 		<header>
 			<div id="bg-cover-rotator">
-				<div id="cover-1" class="cover" style="background: url(./img/jaguar.png) no-repeat center center scroll; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;"></div>
+				<div id="cover-1" class="cover" style="background: url(./img/jaguarHiRes.png) no-repeat center center scroll; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;"></div>
 				<div id="cover-2" class="cover" style="display:none; background: url(./img/carousel/aplchi2.png) no-repeat center center scroll; padding-top 100px; position:'relative'; height: 100%; width: 100%; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;"></div>
 				
 			</div>
