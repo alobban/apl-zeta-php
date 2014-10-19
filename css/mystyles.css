@@ -5,10 +5,17 @@ html, body, header {
   position: relative;
 }
 
-div#bg-cover-rotator {
+#bg-cover-rotator {
 	height: 100%;
 	min-height: 100%;
 	width: 100%;
+	overflow: hidden;
+}
+
+#bd-cover-rotator div {
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 /* Bootstrap One-Page in custome js file*/ 
