@@ -41,6 +41,8 @@
 						<h2 class="greek-name">Zeta Chapter<br /><small class="sub">University of Illinois Chicago</small></h2>
 						<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
 			-->
+					</div>
+					<div>
 						<a id="continue" class="btn" href="#about">
 							<i class="fa fa-angle-down fa-fw"></i>
 						</a>
