@@ -2,34 +2,45 @@
  * @author Andrew
  */
 
-var bkgdImage = document.getElementById("cover");
-console.log(bkgdImage);
+$(document).ready(function() {
+	var behindImage = document.getElementById('cover-1');
+	var frontImage = document.getElementById('cover-2');
+	
+	var input = "./img/carousel/";
+	var imageArray = ["aplchi1.png","aplchi2.png","aplchi3.png","aplchi4.png","aplchi5.png"];
+	var imageIndex = 0;
+	var counter = 0;
 
-var input = "../apl-zeta/img/carousel/";
+	function carousel() {
+		changeImage();
+	} 
 
-var imageArray = ["aplchi1.png","aplchi2.png","aplchi3.png","aplchi4.png","aplchi5.png"];
-var imageIndex = 0;
+	function changeImage() {
+		behindImage.style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center scroll";
+		behindImage.style.display = "block";
+		behindImage.style.position = "absolute";
+		behindImage.style.height = "100%";
+		behindImage.style.width = "100%";
+		behindImage.style.paddingTop = "100px";
+		behindImage.style.backgroundSize = "cover";
+		behindImage.style.mozBackgroundSize = "cover";
+		behindImage.style.oBackgroundSize = "cover";
+		behindImage.style.webkitBackgroundSize = "cover";
 
-function chBackground() {
-	console.log(imageArray[imageIndex]);
-	bkgdImage.style.background = "url(../apl-zeta/img/carousel/" + imageArray[imageIndex] + ")";
-	bkgdImage.style.backgroundPosition = "center center";
-	bkgdImage.style.backgroundAttachment = "fixed";
-	bkgdImage.style.backgroundSize = "cover";
-	imageIndex++;
-	if (imageIndex >= imageArray.length) {
-		imageIndex = 0;
+		$(frontImage).css("display", "none");
+		imageIndex = (imageIndex + 1) % imageArray.length;
+		frontImage.style.background = "url(" + input + imageArray[imageIndex] + ") no-repeat center center scroll";
+		frontImage.style.position = "absolute";
+		frontImage.style.height = "100%";
+		frontImage.style.width = "100%";
+		frontImage.style.paddingTop = "100px";
+		frontImage.style.backgroundSize = "cover";
+		frontImage.style.mozBackgroundSize = "cover";
+		frontImage.style.oBackgroundSize = "cover";
+		frontImage.style.webkitBackgroundSize = "cover";
+		$(frontImage).fadeIn(2000);
 	}
-}
 
-function readFilenames(loc) {
-	if (loc.files) {
-		var reader = new FileReader();
-		console.log(reader.loc);
-	}
-}
-
-window.onload = function() {
-	 setInterval(chBackground, 10000); 
-	/* readFilenames(input); */
-};
+	setInterval(carousel, 10000);
+	
+});
