@@ -34,7 +34,6 @@ $(document).ready(function() {
 		frontImage.style.oBackgroundSize = "cover";
 		frontImage.style.webkitBackgroundSize = "cover";
 		$(frontImage).fadeIn(2000);
-		console.log("First Run");
 	}
 
 	function carousel() {
@@ -43,7 +42,6 @@ $(document).ready(function() {
 			counter++;
 		} else {
 			changeImage();
-			// console.log(counter);
 		}
 	} 
 
