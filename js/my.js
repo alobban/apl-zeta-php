@@ -33,7 +33,7 @@ $(document).ready(function() {
 		frontImage.style.mozBackgroundSize = "cover";
 		frontImage.style.oBackgroundSize = "cover";
 		frontImage.style.webkitBackgroundSize = "cover";
-		$(frontImage).fadeIn(2000);
+		$(frontImage).fadeIn(3000);
 	}
 
 	function carousel() {
@@ -68,7 +68,7 @@ $(document).ready(function() {
 		frontImage.style.mozBackgroundSize = "cover";
 		frontImage.style.oBackgroundSize = "cover";
 		frontImage.style.webkitBackgroundSize = "cover";
-		$(frontImage).fadeIn(2000);
+		$(frontImage).fadeIn(3000);
 	}
 
 	setInterval(carousel, 10000);
