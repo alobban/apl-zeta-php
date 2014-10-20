@@ -18,6 +18,10 @@ html, body, header {
 	position: absolute;
 }
 
+.col-xs-12 {
+	padding: 0;
+}
+
 /* Bootstrap One-Page in custome js file*/ 
 
 /* vertical-centered text */
