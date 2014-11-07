@@ -3,8 +3,8 @@
  */
 
 $(document).ready(function() {
-	var behindImage = document.getElementById('cover-1');
-	var frontImage = document.getElementById('cover-2');
+	var behindImage = document.getElementById('bottom-image');
+	var frontImage = document.getElementById('top-image');
 	
 	var input = "./img/carousel/";
 	var imageArray = ["aplchi1.png","aplchi2.png","aplchi3.png","aplchi4.png","aplchi5.png"];

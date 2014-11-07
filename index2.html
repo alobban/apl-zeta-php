@@ -11,14 +11,13 @@
 		<meta name="description" content="">
 		<meta name="author" content="Andrew">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Orbitron' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/mystyles.css" />
 	</head>
@@ -36,11 +35,6 @@
 					<div class="text-vcenter">
 						<img src="./img/intro2.png" class="img-responsive" />
 						<img src="./img/quote.png" class="img-responsive" />
-			<!--
-						<h1 class="greek-letters">Alpha Psi Lambda</h1>
-						<h2 class="greek-name">Zeta Chapter<br /><small class="sub">University of Illinois Chicago</small></h2>
-						<h3 class="statement">We are more than a fraternity,<br> somos FAMILIA</h3>
-			-->
 					</div>
 					<div>
 						<a id="continue" class="btn" href="#about">
@@ -50,9 +44,6 @@
 				</div>
 			</div>
 			<!--	/first section		-->
-			
-		</header>
-			
 			<!-- navigation panel -->
 			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 				<div class="container-fluid">
@@ -97,8 +88,9 @@
 				</div>
 			</nav>
 			<!--	/navigation panel		-->
-
-			<!--	second section		-->
+		</header>
+			
+		<article>
 			<section id="about" class="about">
 				<div id="filler" class="col-xs-12 col-md-12">
 					<div class="panel panel-primary">
@@ -127,10 +119,11 @@
 					</div>
 				</div>
 			</section>
-			<!--	/second section		-->
-			
-			<!--	third section		-->
-			<section id="infoSection" class="cover">
+		</article>
+
+		<article>
+			<div>
+			<div id="infoSection" class="cover">
 				<div id="history" class="col-md-6 col-xs-12">
 					<div class="transbox caption">
 						<div class="panel panel-primary">
@@ -168,7 +161,7 @@
 								<h1>Community Service</h1>
 							</div>
 							<div class="panel-body">
-								<div id="fixed-images">
+								<div>
 									<div id="services" class="carousel slide" data-ride="carousel">
 										<div class="carousel-inner">
 											<div class="item active">
@@ -193,27 +186,29 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<!--	/third section		-->
+			</div>
+			</div>
+		</article>	
 
-			<!--	footer section		-->
-			<footer>
-				<div class="panel-footer">
-					<p class="cust-font" style="float: right;">
-						&copy; Copyright by &Alpha;&Psi;&Lambda;&#39;s <a href="http://www.linkedin.com/pub/andrew-lobban/39/94b/8aa/">Andrew Lobban</a>
-					</p>
-				</div>
-			</footer>
-			<!-- Latest compiled and minified JavaScript -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-			<script src="js/jquery.fittext.js"></script>
-			<script src="js/my.js"></script>
-			<script src="js/googleAnalytics.js"></script>
-			<script>
-				$("#home h1").fitText( { minFontSize: '16px', maxFontSize: '24px' } );
-				$("#home h2").fitText( { minFontSize: '12px', maxFontSize: '18px' } );
-				$("#home h3").fitText( { minFontSize: '8px', maxFontSize: '14px' } );
-			</script>
+
+		<!--	footer section		-->
+		<footer>
+			<div class="panel-footer">
+				<p class="cust-font" style="float: right;">
+					&copy; Copyright by &Alpha;&Psi;&Lambda;&#39;s <a href="http://www.linkedin.com/pub/andrew-lobban/39/94b/8aa/">Andrew Lobban</a>
+				</p>
+			</div>
+		</footer>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src="js/my.js"></script>
+		<script src="js/googleAnalytics.js"></script>
+		<script>
+			$("#home h1").fitText( { minFontSize: '16px', maxFontSize: '24px' } );
+			$("#home h2").fitText( { minFontSize: '12px', maxFontSize: '18px' } );
+			$("#home h3").fitText( { minFontSize: '8px', maxFontSize: '14px' } );
+		</script>
 	</body>
 </html>

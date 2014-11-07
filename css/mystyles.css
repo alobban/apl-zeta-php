@@ -90,7 +90,7 @@ html, body, header {
 
 #infoSection {
   background: url(../img/jaguarHiRes.png) no-repeat center center scroll;
-  display: table;
+ /* display: table;*/
   height: 100%;
   position: relative;
   width: 100%;
@@ -137,12 +137,6 @@ div.transbox p {
 }
 
 /* Styling images */
-div #fixed-images {
-	margin: auto;
-	width: 400px;
-	height: 300px;
-	overflow: hidden;
-}
 
 img {
 	margin: auto;
